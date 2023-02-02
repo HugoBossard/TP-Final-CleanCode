@@ -10,7 +10,7 @@ module.exports = {
             // Puis on envoie un status 200 (ok) ainsi que le nombre aléatoir généré
             res.status(200).send({random_number});
         }
-        catch ( Erreur ) {
+        catch ( Error ) {
             // Sinon, en cas d'erreur, on envoit un status 400 et on précise l'erreur
             res.status(400).send("Au moins un des paramètres d'entré n'est pas valide. Entier uniquement");
         }
