@@ -15,7 +15,5 @@ app.use(express.json());
 app.use("/myMath", router);
 
 // On lance l'API sur le port définit précédement
-app.listen(PORT);
-
 // Puis on l'affiche dans les logs
-console.log(`Server is listening on PORT ${PORT}`);
+app.listen(PORT, () => console.log(`Server is listening on PORT ${PORT}`));
